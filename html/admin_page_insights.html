@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 페이지 현황&통계</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/admin_dashborad_main.css">
+    <link rel="stylesheet" href="../src/jqwidgets-ver15.0.0/jqwidgets/styles/jqx.base.css">
+    <link rel="stylesheet" href="../src/jqwidgets-ver15.0.0/jqwidgets/styles/jqx.light.css">
+    <link rel="stylesheet" href="../css/polytalk_index.css">
+    <link rel="stylesheet" href="../css/chart.css">
+    <link rel="stylesheet" href="../css/admin_dashboard_insights.css">
+    <script src="https://kit.fontawesome.com/e71a2e5021.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../src/jqwidgets-ver15.0.0/scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../src/jqwidgets-ver15.0.0/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../src/jqwidgets-ver15.0.0/jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="../src/jqwidgets-ver15.0.0/jqwidgets/jqxdraw.js"></script>
+    <script type="text/javascript" src="../src/jqwidgets-ver15.0.0/jqwidgets/jqxchart.core.js"></script>
+    <script type="text/javascript" src="../src/jqwidgets-ver15.0.0/scripts/demos.js"></script>
+    <script type="text/javascript" src="../js/insights.js"></script>
+    <script src="../js/canvas.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+    <script src="../js/canvas.js"></script>
+</head>
+
+<body>
+    <div id="dashboard_top" class="dashboard_header d-flex">
+        <div class="logoImg"><img src="../src/polytalk_logo.png"></div>
+        <div class="date">10월 1일 <span class="violet_text">화</span></div>
+        <div class="profilebox d-flex">
+            <div class="bell"><i class="fa-solid fa-bell"></i></div>
+            <div class="message"><i class="fa-solid fa-message"></i></div>
+            <div class="profile d-flex">
+                <img src="../src/Ellipse 99.png" alt="" class="profile_img">
+                <p><strong>폴리톡</strong>님</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="mainContent d-flex">
+        <div class="sidebar_menu">
+            <div class="sidebar_menu_bigLink">Dash board</div>
+
+            <div class="sidebar_menu_title">현황&통계</div>
+            <div class="sidebar_menu_bigLink">컨텐츠 관리<i class="fa-solid fa-caret-down"></i></div>
+
+            <div class="sidebar_menu_Link">1:1문의 관리</div>
+            <div class="sidebar_menu_Link">자유게시물 관리</div>
+            <div class="sidebar_menu_Link">게시판 관리</div>
+            <div class="sidebar_menu_Link">댓글 관리</div>
+
+            <div class="sidebar_menu_bigLink">사용자 관리<i class="fa-solid fa-caret-down"></i></div>
+
+            <div class="sidebar_menu_Link">개인정보 관리</div>
+            <div class="sidebar_menu_Link">수강정보 조회</div>
+            <div class="sidebar_menu_Link">메일 및 SMS관리</div>
+            <div class="sidebar_menu_Link">사용자 등록</div>
+
+            <div class="sidebar_menu_bigLink">운영자 관리<i class="fa-solid fa-caret-down"></i></div>
+
+            <div class="sidebar_menu_Link">운영자 관리</div>
+            <div class="sidebar_menu_Link">일정 관리</div>
+            <div class="sidebar_menu_Link">쿠폰 생성 및 관리</div>
+            <div class="sidebar_menu_Link">운영자 권한설정</div>
+
+            <div class="sidebar_menu_bigLink">그룹 관리<i class="fa-solid fa-caret-down"></i></div>
+
+            <div class="sidebar_menu_Link">그룹 등록</div>
+            <div class="sidebar_menu_Link">그룹 알림전송</div>
+
+
+            <div class="sidebar_menu_bigLink">환경설정</div>
+            <div class="sidebar_menu_bigLink">로그아웃</div>
+        </div>
+
+
+
+        <div class="admin_mainBox">
+
+            <div class="main_dashboard_item_row d-flex">
+                <div class="d-flex">
+                    <div class="insights_rows1_item main_dashboard_item d-flex">
+                        <div class="insights_rows1_item_title">오늘 총 방문자 수 <br />
+                            <span>16431</span>명
+                        </div>
+                        <div class="insights_rows1_item_img"></div>
+                    </div>
+                    <div class="insights_rows1_item main_dashboard_item  d-flex">
+                        <div class="insights_rows1_item_title">총 판매된 학습 개수 <br />
+                            <span>16431</span>개
+                        </div>
+                        <div class="insights_rows1_item_img"></div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="insights_rows1_item  main_dashboard_item d-flex">
+                        <div class="insights_rows1_item_title">신규 고객 유입 현황 <br />
+                            <span>121</span>명
+                        </div>
+                        <div class="insights_rows1_item_img"></div>
+                    </div>
+                    <div class="insights_rows1_item main_dashboard_item d-flex">
+                        <div class="insights_rows1_item_title">접속 이탈 고객 현황 <br />
+                            <span>134</span>명
+                        </div>
+                        <div class="insights_rows1_item_img"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="main_dashboard_item_row d-flex">
+                <div class="insights_rows2_item main_dashboard_item">
+                    <div class="insights_rows2_item_head d-flex">
+                        <p class="insights_rows2_item_title">순접속자 현황</p>
+                        <div class="insights_rows2_item_head_nav d-flex">
+                            <p class="left_button">
+                                << /p>
+                                    <p class="insights_rows2_item_head_nav_text">10월 1일</p>
+                                    <p class="insights_rows2_item_head_nav_select">10월 2일</p>
+                                    <p class="insights_rows2_item_head_nav_text">10월 3일</p>
+                                    <p class="right_button">></p>
+                        </div>
+                    </div>
+
+                    <div class="insights_rows2_item_body d-flex">
+                        <div class="insights_rows2_item_body_main">
+                            <div class="insights_rows2_item_upOrDwon_red">7%</div>
+                            <div class="insights_rows2_item_mainNum">1634</div>
+                            <div class="insights_rows2_item_date">10월 2일</div>
+                            <div class="insights_rows2_item_last_info">1일전 1621</div>
+                        </div>
+
+                        <div class="insights_rows2_item_body_main">
+                            <div class="insights_rows2_item_upOrDwon_blue">7%</div>
+                            <div class="insights_rows2_item_mainNum">1634</div>
+                            <div class="insights_rows2_item_date">10월 2일</div>
+                            <div class="insights_rows2_item_last_info">1일전 1621</div>
+                        </div>
+
+                        <div class="insights_rows2_item_body_main">
+                            <div class="insights_rows2_item_upOrDwon_red">7%</div>
+                            <div class="insights_rows2_item_mainNum">1634</div>
+                            <div class="insights_rows2_item_date">10월 2일</div>
+                            <div class="insights_rows2_item_last_info">1일전 1621</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="insights_rows2_item main_dashboard_item">
+                    <div class="insights_rows2_item_head d-flex">
+                        <p class="insights_rows2_item_title">학습 현황</p>
+                        <div class="insights_rows2_item_head_nav d-flex">
+                            <p class="left_button">
+                                << /p>
+                                    <p class="insights_rows2_item_head_nav_text">10월 1일</p>
+                                    <p class="insights_rows2_item_head_nav_select">10월 2일</p>
+                                    <p class="insights_rows2_item_head_nav_text">10월 3일</p>
+                                    <p class="right_button">></p>
+                        </div>
+                    </div>
+
+                    <div class="insights_rows2_item_body  d-flex">
+                        <div class="insights_rows2_item_body_main">
+                            <div class="insights_rows2_item_upOrDwon_red">7%</div>
+                            <div class="insights_rows2_item_mainNum">1938</div>
+                            <div class="insights_rows2_item_last_info">10월 2일</div>
+                            <div class="insights_rows2_item_date">폴리톡</div>
+                        </div>
+
+                        <div class="insights_rows2_item_body_main">
+                            <div class="insights_rows2_item_upOrDwon_blue">7%</div>
+                            <div class="insights_rows2_item_mainNum">1645</div>
+                            <div class="insights_rows2_item_last_info">전날 5935</div>
+                            <div class="insights_rows2_item_date">AI 튜터</div>
+                        </div>
+
+                        <div class="insights_rows2_item_body_main">
+                            <div class="insights_rows2_item_upOrDwon_red">7%</div>
+                            <div class="insights_rows2_item_mainNum">1353</div>
+                            <div class="insights_rows2_item_last_info">전날 4239</div>
+                            <div class="insights_rows2_item_date">멀티채팅</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main_dashboard_item_row d-flex">
+                <div class="insights_rows3_percentage main_dashboard_item">
+
+                    <p class="insights_rows3_percentage">실시간 접속자 현황</p>
+
+                    <div class="insights_rows3_percentage_mainBox d-flex">
+                        <div class="insights_rows3_percentage_item">
+                            <div class="insights_rows3_percentage_title">폴리톡<span>(231명)</span>
+                            </div>
+                            <ul class="insights_rows3_percentage_item_ul">
+                                <li class="insights_rows3_percentage_item_li d-flex">
+                                    <p>Android Phone</p>
+                                    <p class="insights_rows3_percentage_item_li_violet">492</p>
+                                    <p class="insights_rows3_percentage_item_li_gray">52%</p>
+                                </li>
+
+                                <li class="insights_rows3_percentage_item_li d-flex">
+                                    <p>iPhone</p>
+                                    <p class="insights_rows3_percentage_item_li_violet">123</p>
+                                    <p class="insights_rows3_percentage_item_li_gray">32%</p>
+                                </li>
+
+                                <li class="insights_rows3_percentage_item_li d-flex">
+                                    <p>Android Tablet</p>
+                                    <p class="insights_rows3_percentage_item_li_violet">5</p>
+                                    <p class="insights_rows3_percentage_item_li_gray">3%</p>
+                                </li>
+
+                                <li class="insights_rows3_percentage_item_li d-flex">
+                                    <p>iPad</p>
+                                    <p class="insights_rows3_percentage_item_li_violet">23</p>
+                                    <p class="insights_rows3_percentage_item_li_gray">8%</p>
+                                </li>
+
+                                <li class="insights_rows3_percentage_item_li d-flex">
+                                    <p>PC</p>
+                                    <p class="insights_rows3_percentage_item_li_violet">90</p>
+                                    <p class="insights_rows3_percentage_item_li_gray">5%</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="insights_rows3_percentage_item">
+                            <div class="insights_rows3_percentage_title">AI튜터<span>(71명)</span>
+                            </div>
+                            <ul class="insights_rows3_percentage_item_ul">
+                                <li class="insights_rows3_percentage_item_li d-flex">
+                                    <p>Android Phone</p>
+                                    <p class="insights_rows3_percentage_item_li_violet">492</p>
+                                    <p class="insights_rows3_percentage_item_li_gray">52%</p>
+                                </li>
+
+                                <li class="insights_rows3_percentage_item_li d-flex">
+                                    <p>iPhone</p>
+                                    <p class="insights_rows3_percentage_item_li_violet">123</p>
+                                    <p class="insights_rows3_percentage_item_li_gray">32%</p>
+                                </li>
+
+                                <li class="insights_rows3_percentage_item_li d-flex">
+                                    <p>Android Tablet</p>
+                                    <p class="insights_rows3_percentage_item_li_violet">5</p>
+                                    <p class="insights_rows3_percentage_item_li_gray">3%</p>
+                                </li>
+
+                                <li class="insights_rows3_percentage_item_li d-flex">
+                                    <p>iPad</p>
+                                    <p class="insights_rows3_percentage_item_li_violet">23</p>
+                                    <p class="insights_rows3_percentage_item_li_gray">8%</p>
+                                </li>
+
+                                <li class="insights_rows3_percentage_item_li d-flex">
+                                    <p>PC</p>
+                                    <p class="insights_rows3_percentage_item_li_violet">90</p>
+                                    <p class="insights_rows3_percentage_item_li_gray">5%</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="insights_rows3_percentage_item">
+                            <div class="insights_rows3_percentage_title">멀티언어 채팅<span>(96명)</span>
+                            </div>
+                            <ul class="insights_rows3_percentage_item_ul">
+                                <li class="insights_rows3_percentage_item_li d-flex">
+                                    <p>Android Phone</p>
+                                    <p class="insights_rows3_percentage_item_li_violet">492</p>
+                                    <p class="insights_rows3_percentage_item_li_gray">52%</p>
+                                </li>
+
+                                <li class="insights_rows3_percentage_item_li d-flex">
+                                    <p>iPhone</p>
+                                    <p class="insights_rows3_percentage_item_li_violet">123</p>
+                                    <p class="insights_rows3_percentage_item_li_gray">32%</p>
+                                </li>
+
+                                <li class="insights_rows3_percentage_item_li d-flex">
+                                    <p>Android Tablet</p>
+                                    <p class="insights_rows3_percentage_item_li_violet">5</p>
+                                    <p class="insights_rows3_percentage_item_li_gray">3%</p>
+                                </li>
+
+                                <li class="insights_rows3_percentage_item_li d-flex">
+                                    <p>iPad</p>
+                                    <p class="insights_rows3_percentage_item_li_violet">23</p>
+                                    <p class="insights_rows3_percentage_item_li_gray">8%</p>
+                                </li>
+
+                                <li class="insights_rows3_percentage_item_li d-flex">
+                                    <p>PC</p>
+                                    <p class="insights_rows3_percentage_item_li_violet">90</p>
+                                    <p class="insights_rows3_percentage_item_li_gray">5%</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="insights_rows3_grp main_dashboard_item">
+                    <p class="insights_rows3_percentage">총 언어 판매갯수</p>
+
+
+                    <div class="insights_rows3_grp_mainBox d-flex">
+                        <div class="insights_rows3_grp_item">
+                            <div class="d-flex">
+                                <div>
+                                    <p class="insights_rows3_grp_item_value">6502</p>
+                                    <span class="insights_rows3_grp_item_bar"></span>
+                                    <p class="insights_rows3_grp_item_name">영어</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="insights_rows3_grp_item">
+                            <div class="d-flex">
+                                <div>
+                                    <p class="insights_rows3_grp_item_value">6502</p>
+                                    <span class="insights_rows3_grp_item_bar"></span>
+                                    <p class="insights_rows3_grp_item_name">영어</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="insights_rows3_grp_item">
+                            <div class="d-flex">
+                                <div>
+                                    <p class="insights_rows3_grp_item_value">6502</p>
+                                    <span class="insights_rows3_grp_item_bar"></span>
+                                    <p class="insights_rows3_grp_item_name">영어</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="insights_rows3_grp_item">
+                            <div class="d-flex">
+                                <div>
+                                    <p class="insights_rows3_grp_item_value">6502</p>
+                                    <span class="insights_rows3_grp_item_bar"></span>
+                                    <p class="insights_rows3_grp_item_name">영어</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="insights_rows3_grp_item">
+                            <div class="d-flex">
+                                <div>
+                                    <p class="insights_rows3_grp_item_value">6502</p>
+                                    <span class="insights_rows3_grp_item_bar"></span>
+                                    <p class="insights_rows3_grp_item_name">영어</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="insights_rows3_grp_item">
+                            <div class="d-flex">
+                                <div>
+                                    <p class="insights_rows3_grp_item_value">6502</p>
+                                    <span class="insights_rows3_grp_item_bar"></span>
+                                    <p class="insights_rows3_grp_item_name">영어</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="insights_rows3_grp_item">
+                            <div class="d-flex">
+                                <div>
+                                    <p class="insights_rows3_grp_item_value">6502</p>
+                                    <span class="insights_rows3_grp_item_bar"></span>
+                                    <p class="insights_rows3_grp_item_name">영어</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="insights_rows3_grp_item">
+                            <div class="d-flex">
+                                <div>
+                                    <p class="insights_rows3_grp_item_value">6502</p>
+                                    <span class="insights_rows3_grp_item_bar"></span>
+                                    <p class="insights_rows3_grp_item_name">영어</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="insights_rows3_grp_item">
+                            <div class="d-flex">
+                                <div>
+                                    <p class="insights_rows3_grp_item_value">6502</p>
+                                    <span class="insights_rows3_grp_item_bar"></span>
+                                    <p class="insights_rows3_grp_item_name">영어</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_dashboard_item_row d-flex main_dashboard_item">
+                <div class="main_dashboard_item main_row3_grpBox">
+                    <div class="d-flex">
+                        <div class="main_row1_grpBox_item_title">언어판매 랭킹</div>
+                        <div class="main_row1_grpBox_item_semiText d-flex">
+                            <span class="grayBox"></span>10월
+                            <span class="YellBox"></span>9월(지난달)
+                        </div>
+                    </div>
+
+                    <div class="grape_box_main">
+                        <span class="x-bar" id="top0"></span>
+                        <span class="x-bar" id="top1"></span>
+                        <span class="x-bar" id="top2"></span>
+                        <span class="x-bar" id="top3"></span>
+                        <div class="bottom_text_flex bar_flex  d-flex">
+                            <div class="bar_grpee d-flex">
+                                <div class="bar_gray"></div>
+                                <div class="bar_yellow"></div>
+                            </div>
+
+                            <div class="bar_grpee d-flex">
+                                <div class="bar_gray"></div>
+                                <div class="bar_yellow"></div>
+                            </div>
+
+                            <div class="bar_grpee d-flex">
+                                <div class="bar_gray"></div>
+                                <div class="bar_yellow"></div>
+                            </div>
+
+                            <div class="bar_grpee d-flex">
+                                <div class="bar_gray"></div>
+                                <div class="bar_yellow"></div>
+                            </div>
+
+                            <div class="bar_grpee d-flex">
+                                <div class="bar_gray"></div>
+                                <div class="bar_yellow"></div>
+                            </div>
+
+                            <div class="bar_grpee d-flex">
+                                <div class="bar_gray"></div>
+                                <div class="bar_yellow"></div>
+                            </div>
+
+                            <div class="bar_grpee d-flex">
+                                <div class="bar_gray"></div>
+                                <div class="bar_yellow"></div>
+                            </div>
+
+                            <div class="bar_grpee d-flex">
+                                <div class="bar_gray"></div>
+                                <div class="bar_yellow"></div>
+                            </div>
+
+                            <div class="bar_grpee d-flex">
+                                <div class="bar_gray"></div>
+                                <div class="bar_yellow"></div>
+                            </div>
+
+                        </div>
+                        <div class="bottom_text_flex d-flex">
+                            <p class="bottom_text_flex_item">영어</p>
+                            <p class="bottom_text_flex_item">중국어</p>
+                            <p class="bottom_text_flex_item">일본어</p>
+                            <p class="bottom_text_flex_item">아랍어</p>
+                            <p class="bottom_text_flex_item">스페인어</p>
+                            <p class="bottom_text_flex_item">태국어</p>
+                            <p class="bottom_text_flex_item">베트남어</p>
+                            <p class="bottom_text_flex_item">독일어</p>
+                            <p class="bottom_text_flex_item">프랑스어</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="main_dashboard_item_row d-flex ">
+                <div class="insights_rows5_circle_grp d-flex">
+                    <div class="insights_rows5_circle_grp_item main_dashboard_item">
+                        <div class="items_title">사용자 연령대 통계</div>
+                        <div class="chart-div">
+                            <canvas id="pieChartCanvas" width="256px" height="256px"></canvas>
+                        </div>
+                    </div>
+                    <div class="insights_rows5_circle_grp_item main_dashboard_item">
+                        <div class="items_title">사용자 연령대 통계</div>
+                        <div class="chart-div2">
+                            <canvas id="pieChartCanvas2" width="256px" height="256px"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insights_rows5_grp main_dashboard_item">
+                    <div class="items_title">기간 수익 그래프</div>
+                    <div id='chartContainer1' style="width:685px; height:300px; padding-left:42px;margin-top:12px;">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+</body>
+
+
+</html>

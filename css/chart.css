@@ -1,0 +1,172 @@
+.jqx-chart-legend-text {
+    display: none !important;
+    visibility:hidden !important;
+    z-index: -9999 !important;
+    opacity: 0 !important;
+    width: 0px !important;
+    height: 0px !important;
+    overflow: hidden !important;
+    display: none;
+}
+
+text + line + g > rect {
+    display: none !important;
+    visibility:hidden !important;
+    z-index: -9999 !important;
+    opacity: 0 !important;
+    width: 0px !important;
+    height: 0px !important;
+    overflow: hidden !important;
+    display: none !important;
+}
+
+text + line + g + g > rect {
+    display: none !important;
+    visibility:hidden !important;
+    z-index: -9999 !important;
+    opacity: 0 !important;
+    width: 0px !important;
+    height: 0px !important;
+    overflow: hidden !important;
+    display: none !important;
+}
+
+text + line +g+ g + g > rect {
+    display: none !important;
+    visibility:hidden !important;
+    z-index: -9999 !important;
+    opacity: 0 !important;
+    width: 0px !important;
+    height: 0px !important;
+    overflow: hidden !important;
+    display: none !important;
+}
+
+#svgChart>rect {
+    width: 12px !important;
+    height: 12px !important;
+    rx: 150;
+    fill: white;
+    stroke: #9928FF;
+    stroke-width: 4px;
+    -moz-box-shadow: -5px -5px 5px #888;
+    -webkit-box-shadow: -5px -5px 5px #888;
+    box-shadow: -5px -5px 5px #888;
+    transform: translateX(-3.5px) translateY(-3.5px);
+
+}
+
+#svgChart>rect+g {
+    display: none;
+    display: none !important;
+    visibility:hidden !important;
+    z-index: -9999 !important;
+    opacity: 0 !important;
+    width: 0px !important;
+    height: 0px !important;
+    overflow: hidden !important;
+}
+
+#svgChart>rect:hover+g {
+    display: block;
+}
+
+path {
+    stroke: #9928FF;
+}
+
+line {
+    stroke: #ddd;
+}
+
+.jqx-chart-axis-text {
+    font: normal normal normal 14px/27px Noto Sans CJK KR;
+    letter-spacing: -0.56px;
+    color: #888888;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+
+#arrowInnerDiv {
+    display: none !important;
+    visibility:hidden !important;
+    z-index: -9999 !important;
+    opacity: 0 !important;
+    width: 0px !important;
+    height: 0px !important;
+    overflow: hidden !important;
+}
+
+#arrowOuterDiv{
+
+    display: none !important;
+    visibility:hidden !important;
+    z-index: -9999 !important;
+    opacity: 0 !important;
+    width: 0px !important;
+    height: 0px !important;
+    overflow: hidden !important;
+}
+/*line + g > path{
+    fill: #FE9204;
+    fill-opacity:0.1;
+} 배경 색 주석처리*/
+
+
+text + line +g+ g + g +.jqx-chart-axis-text{
+    display: none !important;
+    visibility:hidden !important;
+    z-index: -9999 !important;
+    opacity: 0 !important;
+    width: 0px !important;
+    height: 0px !important;
+    overflow: hidden !important;
+    display: none;
+}
+
+text + line +g+ g + g +text + .jqx-chart-axis-text{
+    display: none !important;
+    visibility:hidden !important;
+    z-index: -9999 !important;
+    opacity: 0 !important;
+    width: 0px !important;
+    height: 0px !important;
+    overflow: hidden !important;
+    display: none;
+}
+
+#chartContainer2> table >tbody >tr> td> .chartContainer> #svgChart defs + g text{
+    display: block ;
+    color: #ccc !important;
+
+}
+
+#chartContainer2> table >tbody >tr> td> .chartContainer> #svgChart defs + g > g > rect{
+    fill: #5E91FC;
+    stroke: #5E91FC;
+}
+#svgChart > defs + g > rect{
+    stroke: none;
+}
+
+#chartContainer2> table >tbody >tr> td> .chartContainer> #svgChart defs + g > g > rect{
+    fill: #5E91FC;
+    stroke: #5E91FC;
+}
+
+#chartContainer2> table >tbody >tr> td> .chartContainer> #svgChart defs + g >.jqx-chart-axis-text-light{
+    display: none !important;
+}
+#svgChart > g > g:nth-child(20) > rect{
+    display: none;
+}
+#svgChart > g > g{
+    color: #888;
+}
+#svgChart > g > line:nth-child(53){
+    display: block;
+    width: 0;
+    height: 240px;
+}
+

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 페이지 그룹 추가</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/admin_dashborad_main.css">
+    <link rel="stylesheet" href="../css/polytalk_index.css">
+    <link rel="stylesheet" href="../css/chart.css">
+    <script src="https://kit.fontawesome.com/e71a2e5021.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="dashboard_top" class="dashboard_header d-flex">
+        <div class="logoImg"><img src="../src/polytalk_logo.png"></div>
+        <div class="date">10월 1일 <span class="violet_text">화</span></div>
+        <div class="profilebox d-flex">
+            <div class="bell"><i class="fa-solid fa-bell"></i></div>
+            <div class="message"><i class="fa-solid fa-message"></i></div>
+            <div class="profile d-flex">
+                <img src="../src/Ellipse 99.png" alt="" class="profile_img">
+                <p><strong>폴리톡</strong>님</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="mainContent d-flex">
+        <div class="modal_bg_black"></div>
+
+        <div class="modal_add_coupon">
+            <div class="modal_add_coupon_header d-flex">
+                <p class="modal_add_coupon_title">새 그룹 추가</p>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="modal_add_coupon_inner">
+                <div class="modal_add_coupon_inner_subTitle">그룹명</div>
+                <input type="text" class="modal_add_group_input" placeholder="그룹명을 입력하세요." />
+                <div class="modal_add_coupon_inner_subTitle">그룹 유형</div>
+                <div class="modal_add_group_selectBox d-flex">
+                     <p>운영진 그룹</p>
+                     <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="modal_add_coupon_inner_subTitle">그룹 마스터</div>
+                <input type="text" class="modal_add_group_input" placeholder="그룹 마스터를 추가하세요." />
+                <div class="modal_add_coupon_inner_subTitle">그룹 참여자 <strong>(12명)</strong></div>
+                <div class="modal_add_coupon_inner_userSelectBox">
+                    <input type="text" class="modal_add_coupon_inner_userSelectBox_searchBox" placeholder="검색"/>
+                    <div class="modal_add_coupon_inner_userSelectBox_mainBox">
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>김폴리</p>
+                            </div>
+                            <div class="modal_add_coupon_inner_userSelectBox_sess">일반회원</div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>김폴리</p>
+                            </div>
+                            <div class="modal_add_coupon_inner_userSelectBox_sess">일반회원</div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>김폴리</p>
+                            </div>
+                            <div class="modal_add_coupon_inner_userSelectBox_sess">일반회원</div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>김폴리</p>
+                            </div>
+                            <div class="modal_add_coupon_inner_userSelectBox_sess">일반회원</div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>김폴리</p>
+                            </div>
+                            <div class="modal_add_coupon_inner_userSelectBox_sess">일반회원</div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>김폴리</p>
+                            </div>
+                            <div class="modal_add_coupon_inner_userSelectBox_sess">일반회원</div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>김폴리</p>
+                            </div>
+                            <div class="modal_add_coupon_inner_userSelectBox_sess">일반회원</div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>김폴리</p>
+                            </div>
+                            <div class="modal_add_coupon_inner_userSelectBox_sess">일반회원</div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>김폴리</p>
+                            </div>
+                            <div class="modal_add_coupon_inner_userSelectBox_sess">일반회원</div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>김폴리</p>
+                            </div>
+                            <div class="modal_add_coupon_inner_userSelectBox_sess">일반회원</div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>김폴리</p>
+                            </div>
+                            <div class="modal_add_coupon_inner_userSelectBox_sess">일반회원</div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>김폴리</p>
+                            </div>
+                            <div class="modal_add_coupon_inner_userSelectBox_sess">일반회원</div>
+                        </div>
+
+                    </div>
+                </div>      
+                <div class="modal_add_coupon_inner_subTitle">권한 설정</div>
+                <div class="modal_add_coupon_inner_userSelectBox modal_add_coupon_inner_userSelectBox_last">
+                    <div class="modal_add_coupon_inner_userSelectBox_mainBox modal_add_coupon_inner_userSelectBox_mainBox_noINput">
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>대시보드 접근 권한</p>
+                            </div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>대시보드 접근 권한</p>
+                            </div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>대시보드 접근 권한</p>
+                            </div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>대시보드 접근 권한</p>
+                            </div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>대시보드 접근 권한</p>
+                            </div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>대시보드 접근 권한</p>
+                            </div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>대시보드 접근 권한</p>
+                            </div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>대시보드 접근 권한</p>
+                            </div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>대시보드 접근 권한</p>
+                            </div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>대시보드 접근 권한</p>
+                            </div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>대시보드 접근 권한</p>
+                            </div>
+                        </div>
+                        <div class="d-flex modal_add_coupon_inner_userSelectBox_line">
+                            <div class="modal_add_coupon_inner_userSelectBox_headBox d-flex">
+                                <div class="modal_add_coupon_inner_userSelectBox_checkBox"></div>
+                                <p>대시보드 접근 권한</p>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+                <div class="modal_button_Box_button_violet modal_button_Box_button_violet_addGroup">추가하기</div>
+            </div>
+
+        </div>
+        </div>
+        <div class="sidebar_menu">
+            <div class="sidebar_menu_bigLink">Dash board</div>
+
+            <div class="sidebar_menu_bigLink">현황&통계</div>
+            <div class="sidebar_menu_bigLink ">컨텐츠 관리<i class="fa-solid fa-caret-down"></i></div>
+
+            <div class="sidebar_menu_Link ">1:1문의 관리</div>
+            <div class="sidebar_menu_Link ">Q&A 게시물관리</div>
+            <div class="sidebar_menu_Link ">게시판 관리</div>
+            <div class="sidebar_menu_Link">댓글 관리</div>
+
+            <div class="sidebar_menu_bigLink ">사용자 관리<i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div class="sidebar_menu_Link ">개인정보 관리</div>
+            <div class="sidebar_menu_Link">수강정보 조회</div>
+            <div class="sidebar_menu_Link">메일 및 SMS관리</div>
+            <div class="sidebar_menu_Link">사용자 등록</div>
+
+            <div class="sidebar_menu_bigLink ">운영자 관리<i class="fa-solid fa-caret-down"></i></div>
+
+            <div class="sidebar_menu_Link ">운영자 관리</div>
+            <div class="sidebar_menu_Link">일정 관리</div>
+            <div class="sidebar_menu_Link">쿠폰 생성 및 관리</div>
+            <div class="sidebar_menu_Link">운영자 권한설정</div>
+
+            <div class="sidebar_menu_bigLink sidebar_menu_bigLink_selected">그룹 관리<i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div class="sidebar_menu_Link sidebar_menu_Link_selected">그룹 등록</div>
+            <div class="sidebar_menu_Link">그룹 알림전송</div>
+
+
+            <div class="sidebar_menu_bigLink">환경설정</div>
+            <div class="sidebar_menu_bigLink">로그아웃</div>
+        </div>
+
+
+
+        <div class="admin_mainBox">
+
+            <div class="wrap list_top_searchbox">
+                <input type="text" placeholder="그룹이름, 이메일 검색">
+            </div>
+
+            <div class="userSeeMore_head d-flex">
+                <div class="d-flex">
+                    <p>그룹 &nbsp</p>
+                    <strong>12</strong>
+                    <p>개</p>
+                </div>
+
+                <div class="d-flex ">
+                    <button class="button admin_list_bottom_button"><i class="fa-solid fa-plus"></i>그룹 추가</button>
+                    <button class="button admin_list_bottom_button"><i class="fa-solid fa-xmark"></i>선택 삭제</button>
+                </div>
+            </div>
+
+
+            <div class="adminSetAdmin_list d-flex">
+
+                <div class="adminSetAdmin_item">
+                    <div class="adminSetAdmin_item_head d-flex">
+                        <div class="checkbox_violet_100"></div>
+                        <div class="adminSetAdmin_item_seeMore">+ 더보기</div>
+                    </div>
+                    <img src="../src/Ellipse 99.png" alt="" class="adminSetAdmin_item_img">
+
+                    <div class="adminSetAdmin_item_Name">
+                        영업 3팀
+                    </div>
+
+
+                    <div class="adminSetAdmin_item_body">
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹마스터</div>
+                            <div class="adminSetAdmin_item_left">폴리톡</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹유형</div>
+                            <div class="adminSetAdmin_item_left">운영진 그룹</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹생성일</div>
+                            <div class="adminSetAdmin_item_left">2022.10.1</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹인원</div>
+                            <div class="adminSetAdmin_item_left">24명</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="adminSetAdmin_item">
+                    <div class="adminSetAdmin_item_head d-flex">
+                        <div class="checkbox_violet_100"></div>
+                        <div class="adminSetAdmin_item_seeMore">+ 더보기</div>
+                    </div>
+                    <img src="../src/Ellipse 99.png" alt="" class="adminSetAdmin_item_img">
+
+                    <div class="adminSetAdmin_item_Name">
+                        영업 3팀
+                    </div>
+
+
+                    <div class="adminSetAdmin_item_body">
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹마스터</div>
+                            <div class="adminSetAdmin_item_left">폴리톡</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹유형</div>
+                            <div class="adminSetAdmin_item_left">운영진 그룹</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹생성일</div>
+                            <div class="adminSetAdmin_item_left">2022.10.1</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹인원</div>
+                            <div class="adminSetAdmin_item_left">24명</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="adminSetAdmin_item">
+                    <div class="adminSetAdmin_item_head d-flex">
+                        <div class="checkbox_violet_100"></div>
+                        <div class="adminSetAdmin_item_seeMore">+ 더보기</div>
+                    </div>
+                    <img src="../src/Ellipse 99.png" alt="" class="adminSetAdmin_item_img">
+
+                    <div class="adminSetAdmin_item_Name">
+                        영업 3팀
+                    </div>
+
+
+                    <div class="adminSetAdmin_item_body">
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹마스터</div>
+                            <div class="adminSetAdmin_item_left">폴리톡</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹유형</div>
+                            <div class="adminSetAdmin_item_left">운영진 그룹</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹생성일</div>
+                            <div class="adminSetAdmin_item_left">2022.10.1</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹인원</div>
+                            <div class="adminSetAdmin_item_left">24명</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="adminSetAdmin_list d-flex">
+
+                <div class="adminSetAdmin_item">
+                    <div class="adminSetAdmin_item_head d-flex">
+                        <div class="checkbox_violet_100"></div>
+                        <div class="adminSetAdmin_item_seeMore">+ 더보기</div>
+                    </div>
+                    <img src="../src/Ellipse 99.png" alt="" class="adminSetAdmin_item_img">
+
+                    <div class="adminSetAdmin_item_Name">
+                        영업 3팀
+                    </div>
+
+
+                    <div class="adminSetAdmin_item_body">
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹마스터</div>
+                            <div class="adminSetAdmin_item_left">폴리톡</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹유형</div>
+                            <div class="adminSetAdmin_item_left">운영진 그룹</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹생성일</div>
+                            <div class="adminSetAdmin_item_left">2022.10.1</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹인원</div>
+                            <div class="adminSetAdmin_item_left">24명</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="adminSetAdmin_item">
+                    <div class="adminSetAdmin_item_head d-flex">
+                        <div class="checkbox_violet_100"></div>
+                        <div class="adminSetAdmin_item_seeMore">+ 더보기</div>
+                    </div>
+                    <img src="../src/Ellipse 99.png" alt="" class="adminSetAdmin_item_img">
+
+                    <div class="adminSetAdmin_item_Name">
+                        영업 3팀
+                    </div>
+
+
+                    <div class="adminSetAdmin_item_body">
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹마스터</div>
+                            <div class="adminSetAdmin_item_left">폴리톡</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹유형</div>
+                            <div class="adminSetAdmin_item_left">운영진 그룹</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹생성일</div>
+                            <div class="adminSetAdmin_item_left">2022.10.1</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹인원</div>
+                            <div class="adminSetAdmin_item_left">24명</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="adminSetAdmin_item">
+                    <div class="adminSetAdmin_item_head d-flex">
+                        <div class="checkbox_violet_100"></div>
+                        <div class="adminSetAdmin_item_seeMore">+ 더보기</div>
+                    </div>
+                    <img src="../src/Ellipse 99.png" alt="" class="adminSetAdmin_item_img">
+
+                    <div class="adminSetAdmin_item_Name">
+                        영업 3팀
+                    </div>
+
+
+                    <div class="adminSetAdmin_item_body">
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹마스터</div>
+                            <div class="adminSetAdmin_item_left">폴리톡</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹유형</div>
+                            <div class="adminSetAdmin_item_left">운영진 그룹</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹생성일</div>
+                            <div class="adminSetAdmin_item_left">2022.10.1</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹인원</div>
+                            <div class="adminSetAdmin_item_left">24명</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="adminSetAdmin_list d-flex">
+
+                <div class="adminSetAdmin_item">
+                    <div class="adminSetAdmin_item_head d-flex">
+                        <div class="checkbox_violet_100"></div>
+                        <div class="adminSetAdmin_item_seeMore">+ 더보기</div>
+                    </div>
+                    <img src="../src/Ellipse 99.png" alt="" class="adminSetAdmin_item_img">
+
+                    <div class="adminSetAdmin_item_Name">
+                        영업 3팀
+                    </div>
+
+
+                    <div class="adminSetAdmin_item_body">
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹마스터</div>
+                            <div class="adminSetAdmin_item_left">폴리톡</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹유형</div>
+                            <div class="adminSetAdmin_item_left">운영진 그룹</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹생성일</div>
+                            <div class="adminSetAdmin_item_left">2022.10.1</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹인원</div>
+                            <div class="adminSetAdmin_item_left">24명</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="adminSetAdmin_item">
+                    <div class="adminSetAdmin_item_head d-flex">
+                        <div class="checkbox_violet_100"></div>
+                        <div class="adminSetAdmin_item_seeMore">+ 더보기</div>
+                    </div>
+                    <img src="../src/Ellipse 99.png" alt="" class="adminSetAdmin_item_img">
+
+                    <div class="adminSetAdmin_item_Name">
+                        영업 3팀
+                    </div>
+
+
+                    <div class="adminSetAdmin_item_body">
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹마스터</div>
+                            <div class="adminSetAdmin_item_left">폴리톡</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹유형</div>
+                            <div class="adminSetAdmin_item_left">운영진 그룹</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹생성일</div>
+                            <div class="adminSetAdmin_item_left">2022.10.1</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹인원</div>
+                            <div class="adminSetAdmin_item_left">24명</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="adminSetAdmin_item">
+                    <div class="adminSetAdmin_item_head d-flex">
+                        <div class="checkbox_violet_100"></div>
+                        <div class="adminSetAdmin_item_seeMore">+ 더보기</div>
+                    </div>
+                    <img src="../src/Ellipse 99.png" alt="" class="adminSetAdmin_item_img">
+
+                    <div class="adminSetAdmin_item_Name">
+                        영업 3팀
+                    </div>
+
+
+                    <div class="adminSetAdmin_item_body">
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹마스터</div>
+                            <div class="adminSetAdmin_item_left">폴리톡</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹유형</div>
+                            <div class="adminSetAdmin_item_left">운영진 그룹</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹생성일</div>
+                            <div class="adminSetAdmin_item_left">2022.10.1</div>
+                        </div>
+                        <div class="adminSetAdmin_item_list d-flex">
+                            <div class="adminSetAdmin_item_right">그룹인원</div>
+                            <div class="adminSetAdmin_item_left">24명</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section01_lib_pt_numList AdminSetAdmin_BottomNumBox">
+                <ul class="section01_lib_pt_numList_ul">
+                    <div class="section01_lib_pt_numList_li">
+                        << /div>
+                            <div class="section01_lib_pt_numList_li section01_lib_pt_numList_li_select">1</div>
+                            <div class="section01_lib_pt_numList_li">2</div>
+                            <div class="section01_lib_pt_numList_li">3</div>
+                            <div class="section01_lib_pt_numList_li">4</div>
+                            <div class="section01_lib_pt_numList_li">5</div>
+                            <div class="section01_lib_pt_numList_li">6</div>
+                            <div class="section01_lib_pt_numList_li">7</div>
+                            <div class="section01_lib_pt_numList_li">8</div>
+                            <div class="section01_lib_pt_numList_li">></div>
+                </ul>
+
+
+            </div>
+
+
+
+        </div>
+    </section>
+</body>
+
+</html>

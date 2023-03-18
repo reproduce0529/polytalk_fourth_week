@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 페이지 보낸 알림 조회 </title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/admin_dashborad_main.css">
+    <link rel="stylesheet" href="../css/polytalk_index.css">
+    <link rel="stylesheet" href="../css/chart.css">
+    <script src="https://kit.fontawesome.com/e71a2e5021.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="dashboard_top" class="dashboard_header d-flex">
+        <div class="logoImg"><img src="../src/polytalk_logo.png"></div>
+        <div class="date">10월 1일 <span class="violet_text">화</span></div>
+        <div class="profilebox d-flex">
+            <div class="bell"><i class="fa-solid fa-bell"></i></div>
+            <div class="message"><i class="fa-solid fa-message"></i></div>
+            <div class="profile d-flex">
+                <img src="../src/Ellipse 99.png" alt="" class="profile_img">
+                <p><strong>폴리톡</strong>님</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="mainContent d-flex">
+        <div class="sidebar_menu">
+            <div class="sidebar_menu_bigLink">Dash board</div>
+
+            <div class="sidebar_menu_bigLink">현황&통계</div>
+            <div class="sidebar_menu_bigLink ">컨텐츠 관리<i class="fa-solid fa-caret-down"></i></div>
+
+            <div class="sidebar_menu_Link ">1:1문의 관리</div>
+            <div class="sidebar_menu_Link ">Q&A 게시물관리</div>
+            <div class="sidebar_menu_Link ">게시판 관리</div>
+            <div class="sidebar_menu_Link">댓글 관리</div>
+
+            <div class="sidebar_menu_bigLink ">사용자 관리<i class="fa-solid fa-caret-down"></i></div>
+
+            <div class="sidebar_menu_Link ">개인정보 관리</div>
+            <div class="sidebar_menu_Link ">수강정보 조회</div>
+            <div class="sidebar_menu_Link ">메일 및 SMS관리</div>
+            <div class="sidebar_menu_Link">사용자 등록</div>
+
+            <div class="sidebar_menu_bigLink">운영자 관리<i class="fa-solid fa-caret-down"></i></div>
+
+            <div class="sidebar_menu_Link">운영자 관리</div>
+            <div class="sidebar_menu_Link">일정 관리</div>
+            <div class="sidebar_menu_Link">쿠폰 생성 및 관리</div>
+            <div class="sidebar_menu_Link">운영자 권한설정</div>
+
+            <div class="sidebar_menu_bigLink sidebar_menu_bigLink_selected">그룹 관리<i class="fa-solid fa-caret-down"></i></div>
+
+            <div class="sidebar_menu_Link">그룹 등록</div>
+            <div class="sidebar_menu_Link sidebar_menu_Link_selected">그룹 알림전송</div>
+
+
+            <div class="sidebar_menu_bigLink">환경설정</div>
+            <div class="sidebar_menu_bigLink">로그아웃</div>
+        </div>
+
+
+
+        <div class="admin_mainBox">
+
+            <div class="wrap list_top_searchbox"  >
+                <input type="text" placeholder="작성자, 제목 검색">
+            </div>
+
+            <div class="wrap">
+    
+    
+                    <div class="section01_lib_pt_mainBox">
+                        <div class="admin_list_title d-flex"><div>최근 발송 알림 확인</div><div></div></div>
+                        <div class="section01_lib_pt_tableBox">
+                            <table class="section01_lib_pt_table">
+                                <thead class="section01_lib_pt_thead">
+                                    <tr class="section01_lib_pt_thead_tr">
+                                        <th class="section01_lib_pt_thead_tr_th"><div class="list_violet_border"></div></th>
+                                        <th class="section01_lib_pt_thead_tr_th">번호</th>
+                                        <th class="section01_lib_pt_thead_tr_th">제목</th>
+                                        <th class="section01_lib_pt_thead_tr_th">보낸사람</th>
+                                        <th class="section01_lib_pt_thead_tr_th">받는사람</th>
+                                        <th class="section01_lib_pt_thead_tr_th">발송일</th>
+                                        <th class="section01_lib_pt_thead_tr_th">상태</th>
+
+                                    </tr>
+                                </thead>
+    
+    
+                                <tbody class="section01_lib_pt_tbody">
+    
+                              
+                                
+                                    <tr class="section01_lib_pt_tbody_tr">
+                                        <td class="section01_lib_pt_thead_tr_th"><div class="list_violet_border"></div></td>
+                                        <td class="section01_lib_pt_tbody_td">123</td>
+                                        <td class="section01_lib_pt_tbody_td">폴리톡 학습페이지 점검으로 인한...</td>
+                                        <td class="section01_lib_pt_tbody_td">관리자</td>
+                                        <td class="section01_lib_pt_tbody_td">전체회원</td>
+                                        <td class="section01_lib_pt_tbody_td">2022.10.1</td>
+                                        <td class="section01_lib_pt_tbody_td">정상발송</td>
+                                    </tr>
+                                    <tr class="section01_lib_pt_tbody_tr">
+                                        <td class="section01_lib_pt_thead_tr_th"><div class="list_violet_border"></div></td>
+                                        <td class="section01_lib_pt_tbody_td">123</td>
+                                        <td class="section01_lib_pt_tbody_td">폴리톡 학습페이지 점검으로 인한...</td>
+                                        <td class="section01_lib_pt_tbody_td">관리자</td>
+                                        <td class="section01_lib_pt_tbody_td">전체회원</td>
+                                        <td class="section01_lib_pt_tbody_td">2022.10.1</td>
+                                        <td class="section01_lib_pt_tbody_td">정상발송</td>
+                                    </tr>
+                                    <tr class="section01_lib_pt_tbody_tr">
+                                        <td class="section01_lib_pt_thead_tr_th"><div class="list_violet_border"></div></td>
+                                        <td class="section01_lib_pt_tbody_td">123</td>
+                                        <td class="section01_lib_pt_tbody_td">폴리톡 학습페이지 점검으로 인한...</td>
+                                        <td class="section01_lib_pt_tbody_td">관리자</td>
+                                        <td class="section01_lib_pt_tbody_td">전체회원</td>
+                                        <td class="section01_lib_pt_tbody_td">2022.10.1</td>
+                                        <td class="section01_lib_pt_tbody_td">정상발송</td>
+                                    </tr>
+                                    <tr class="section01_lib_pt_tbody_tr">
+                                        <td class="section01_lib_pt_thead_tr_th"><div class="list_violet_border"></div></td>
+                                        <td class="section01_lib_pt_tbody_td">123</td>
+                                        <td class="section01_lib_pt_tbody_td">폴리톡 학습페이지 점검으로 인한...</td>
+                                        <td class="section01_lib_pt_tbody_td">관리자</td>
+                                        <td class="section01_lib_pt_tbody_td">전체회원</td>
+                                        <td class="section01_lib_pt_tbody_td">2022.10.1</td>
+                                        <td class="section01_lib_pt_tbody_td">정상발송</td>
+                                    </tr>
+                                    <tr class="section01_lib_pt_tbody_tr">
+                                        <td class="section01_lib_pt_thead_tr_th"><div class="list_violet_border"></div></td>
+                                        <td class="section01_lib_pt_tbody_td">123</td>
+                                        <td class="section01_lib_pt_tbody_td">폴리톡 학습페이지 점검으로 인한...</td>
+                                        <td class="section01_lib_pt_tbody_td">관리자</td>
+                                        <td class="section01_lib_pt_tbody_td">전체회원</td>
+                                        <td class="section01_lib_pt_tbody_td">2022.10.1</td>
+                                        <td class="section01_lib_pt_tbody_td">정상발송</td>
+                                    </tr>
+                                    <tr class="section01_lib_pt_tbody_tr">
+                                        <td class="section01_lib_pt_thead_tr_th"><div class="list_violet_border"></div></td>
+                                        <td class="section01_lib_pt_tbody_td">123</td>
+                                        <td class="section01_lib_pt_tbody_td">폴리톡 학습페이지 점검으로 인한...</td>
+                                        <td class="section01_lib_pt_tbody_td">관리자</td>
+                                        <td class="section01_lib_pt_tbody_td">전체회원</td>
+                                        <td class="section01_lib_pt_tbody_td">2022.10.1</td>
+                                        <td class="section01_lib_pt_tbody_td">정상발송</td>
+                                    </tr>
+                                    <tr class="section01_lib_pt_tbody_tr">
+                                        <td class="section01_lib_pt_thead_tr_th"><div class="list_violet_border"></div></td>
+                                        <td class="section01_lib_pt_tbody_td">123</td>
+                                        <td class="section01_lib_pt_tbody_td">폴리톡 학습페이지 점검으로 인한...</td>
+                                        <td class="section01_lib_pt_tbody_td">관리자</td>
+                                        <td class="section01_lib_pt_tbody_td">전체회원</td>
+                                        <td class="section01_lib_pt_tbody_td">2022.10.1</td>
+                                        <td class="section01_lib_pt_tbody_td">정상발송</td>
+                                    </tr>
+                                    <tr class="section01_lib_pt_tbody_tr">
+                                        <td class="section01_lib_pt_thead_tr_th"><div class="list_violet_border"></div></td>
+                                        <td class="section01_lib_pt_tbody_td">123</td>
+                                        <td class="section01_lib_pt_tbody_td">폴리톡 학습페이지 점검으로 인한...</td>
+                                        <td class="section01_lib_pt_tbody_td">관리자</td>
+                                        <td class="section01_lib_pt_tbody_td">전체회원</td>
+                                        <td class="section01_lib_pt_tbody_td">2022.10.1</td>
+                                        <td class="section01_lib_pt_tbody_td">정상발송</td>
+                                    </tr>
+                                    <tr class="section01_lib_pt_tbody_tr">
+                                        <td class="section01_lib_pt_thead_tr_th"><div class="list_violet_border"></div></td>
+                                        <td class="section01_lib_pt_tbody_td">123</td>
+                                        <td class="section01_lib_pt_tbody_td">폴리톡 학습페이지 점검으로 인한...</td>
+                                        <td class="section01_lib_pt_tbody_td">관리자</td>
+                                        <td class="section01_lib_pt_tbody_td">전체회원</td>
+                                        <td class="section01_lib_pt_tbody_td">2022.10.1</td>
+                                        <td class="section01_lib_pt_tbody_td">정상발송</td>
+                                    </tr>
+                                    <tr class="section01_lib_pt_tbody_tr">
+                                        <td class="section01_lib_pt_thead_tr_th"><div class="list_violet_border"></div></td>
+                                        <td class="section01_lib_pt_tbody_td">123</td>
+                                        <td class="section01_lib_pt_tbody_td">폴리톡 학습페이지 점검으로 인한...</td>
+                                        <td class="section01_lib_pt_tbody_td">관리자</td>
+                                        <td class="section01_lib_pt_tbody_td">전체회원</td>
+                                        <td class="section01_lib_pt_tbody_td">2022.10.1</td>
+                                        <td class="section01_lib_pt_tbody_td">정상발송</td>
+                                    </tr>
+                                    
+                                   
+                                    
+    
+                                </tbody>
+                            </table>
+    
+                            
+                        
+                            
+                        </div>
+                    </div>
+          
+    
+    
+    
+                
+            </div>
+
+            <div class="admin_list_bottom_button_box">
+                <button class="button admin_list_bottom_button"><i class="fa-solid fa-xmark"></i>     선택 삭제</button>
+            </div>
+
+           
+        </div>
+    </section>
+</body>
+
+</html>

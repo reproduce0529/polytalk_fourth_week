@@ -1,0 +1,31 @@
+.mainSMS_head_Nav{
+    border-bottom: 1px solid #eddeff;
+    justify-content: left;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: 36px;
+}
+
+.mainSMS_head_Nav_item{
+    width: 92px;
+    text-align: center;
+    padding-bottom : 18px;
+}
+
+.mainSMS_head_Nav_item_selected{
+    color: #9D4BE7;
+    font-weight: bold;
+    border-bottom: 3px solid #9D4BE7;
+    
+}
+
+.admin_wrap_inner{
+    width: 95%;
+    margin: auto;
+    margin-top: 64px;
+}
+
+.wrap{
+    width: 1478px !important;
+    min-height: 1570px;
+}

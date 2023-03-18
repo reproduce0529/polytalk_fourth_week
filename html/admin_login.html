@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 로그인</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/admin_login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="../css/polytalk_index.css">
+    <script src="https://kit.fontawesome.com/e71a2e5021.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="top">
+            <div class="inner">
+                <div class="top_wrapper">
+                    <span class="top_inner_box" id="top_box_1">신.규.회.원 전용!</span>
+                    <span class="top_inner_box" id="top_box_2">지금 구독하면 5% 할인쿠폰 제공</span>
+                    <span class="top_inner_box" id="top_box_3">
+                        자세히 보기 <i class="fa-solid fa-angle-right" style="margin-left:10px"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <header id="main_logo">
+            <div class="inner">
+                <div id="main_logo_left_box"></div>
+                <div id="menu_logoBox">
+                    <a href="./" id="menu_logo_box">
+                        <img src="../src/polytalk_logo.png" alt="logo" id="menu_logo_img">
+                    </a>
+                </div>
+                <div id="main_logo_right_box">
+                    <span>회원가입</span>
+                    <span>로그인</span>
+                    <span>고객센터</span>
+                </div>
+            </div>
+        </header>
+        <nav id="nav">
+            <div class="inner">
+                <div class="mobile_menu"><i class="fa-solid fa-bars" style="font-size:22px;"></i></div>
+                <ul id="menu_nav">
+                    <li><a href="#" class="menu_nav_bar_item">Ploy Talk</a></li>
+                    <li><a href="#" class="menu_nav_bar_item">학습과정</a></li>
+                    <li><a href="#" class="menu_nav_bar_item">학습후기</a></li>
+                    <li><a href="#" class="menu_nav_bar_item">커뮤니티</a></li>
+                    <li><a href="#" class="menu_nav_bar_item">이벤트</a></li>
+                    <li><a href="#" class="menu_nav_bar_item">고객센터</a></li>
+                </ul>
+                <div class="menu_open">
+                    <div class="menu_detail">
+                        <ul class="menu_detail_ul">
+                            <li class="menu_detail_li"><a href="#">Ploy Talk소개</a></li>
+                            <li class="menu_detail_li"><a href="#">만든사람들</a></li>
+                        </ul>
+                        <ul class="menu_detail_ul">
+                            <li class="menu_detail_li"><a href="#">커리큘럼</a></li>
+                            <li class="menu_detail_li"><a href="#">컨텐츠</a></li>
+                            <li class="menu_detail_li"><a href="#">학습방법</a></li>
+                        </ul>
+                        <ul class="menu_detail_ul ml-12 mr-12">
+                            <li class="menu_detail_li"><a href="#">학습후기쓰기</a></li>
+                        </ul>
+                        <ul class="menu_detail_ul ml-12 mr-12">
+                            <li class="menu_detail_li"><a href="#">자료실</a></li>
+                            <li class="menu_detail_li"><a href="#">자유게시판</a></li>
+                        </ul>
+                        <ul class="menu_detail_ul ml-30 mr-12">
+                            <li class="menu_detail_li"><a href="#">이벤트</a></li>
+                        </ul>
+                        <ul class="menu_detail_ul ml-24">
+                            <li class="menu_detail_li"><a href="#">공지사항</a></li>
+                            <li class="menu_detail_li"><a href="#">자주묻는 질문</a></li>
+                            <li class="menu_detail_li"><a href="#">1:1 환불문의</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu_buttonBox">
+                    <a href="#" class="button menu_button_violet">수강하기</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section class="section01" id="admin_login_section01">
+        <div class="wrap">
+            <div class="inner">
+                <div class="login_header d-flex">
+                    <img src="../src/polytalk_logo.png" alt="">
+                    <p class="login_header_title">관리자 로그인</p>
+                </div>
+
+                <form action="" method="post">
+                    <input type="text" placeholder="아이디" class="admin_login_form_input">
+                    <input type="password" placeholder="비밀번호" class="admin_login_form_input">
+                    <input type="submit" value="로그인 하기" class="form_submit_button">
+                    <div class="form_under_text d-flex">
+                        <div>
+                            <input type="checkbox"> 로그인 상태 유지
+                        </div>
+
+                        <div>
+                            <a href="#">아이디/비밀번호 찾기</a>
+                        </div>
+                    </div>
+                </form>
+
+                 <div class="form_login_admin_message_text">
+                    <span class="bar_width"></span>
+                    <p class="on_text">간편 로그인하기</p>
+                 </div>
+
+
+                 <div class="form_login_admin_sns">
+                    <img src="../src/image 46.png" alt="">
+                 </div>
+
+                 <div class="login_form_acc_createButton">회원가입하기</div>
+
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="index_footer">
+            <div class="inner">
+                <ul class="index_footer_wrap">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                    <li><a href="#">단체수강문의</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="index_footer_content">
+            <div class="inner">
+                <div id="footer_logo_box">
+                    <div id="footer_logo"><img src="../src/polytalk_logo.png" alt=""></div>
+                    <div id="phone_num">
+                        <p>1544-8393</p>
+                        <dl>
+                            <dt>평일 : </dt>
+                            <dd>09:00 ~ 18:00</dd>
+                            <br />
+                            <dt>점심시간 : </dt>
+                            <dd>12:00 ~ 13:00</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div id="footer_info">
+                    <span>인탑스 주식회사 (INTOPS Co., Ltd)</span>
+                    <dl>
+                        <dt>대표 : </dt>
+                        <dd>박신영 | </dd>
+                        <dt>사업자 등록번호 : </dt>
+                        <dd>767-88-00834 | </dd>
+                        <dt>통신판매업 신고번호 : </dt>
+                        <dd>제 2020-서울양천-1436호 | </dd>
+                        <dt>주소 : </dt>
+                        <dd>서울시 양천구 목동중앙북로 18길 5 2F(언드탑) | </dd>
+                        <dt>대표전화 : </dt>
+                        <dd>02-2651-1934 / 팩스 02-2647-1847 | </dd>
+                        <dt>이메일 : </dt>
+                        <dd>polytalk@daum.net</dd>
+                    </dl>
+                    <small>Copyright2023 INTOPS All Right Reserved.</small>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
